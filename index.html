@@ -21,10 +21,12 @@
                 Aprenda a ganhar dinheiro em casa fazendo crochê mesmo que você seja uma total iniciante
             </h1>
 
-            <!-- Área do Vídeo de Vendas -->
+            <!-- Área do Vídeo MP4 Direct -->
             <div class="relative w-full max-w-2xl mx-auto aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border-4 border-white mb-6">
-                <!-- Substitua o src abaixo pelo embed do seu vídeo (YouTube, Vimeo, PandaVideo, etc.) quando estiver pronto -->
-                <iframe class="w-full h-full" src="about:blank" title="Vídeo de Vendas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <video class="w-full h-full object-cover" controls playsinline>
+                    <source src="video.mp4" type="video/mp4">
+                    Seu navegador não suporta a exibição deste vídeo.
+                </video>
             </div>
 
             <!-- Botão 1 -->
@@ -69,16 +71,14 @@
         </div>
     </section>
 
-    <!-- Galeria de Peças -->
+    <!-- Galeria de Peças (Extraídas do E-book) -->
     <section class="py-12 px-4 max-w-5xl mx-auto text-center border-t border-stone-200">
         <h2 class="text-2xl md:text-3xl font-extrabold text-pink-custom uppercase mb-2">
             Confira as LINDAS PEÇAS que você vai APRENDER a FAZER
         </h2>
         <p class="text-sm text-stone-600 mb-8">São vários tipos de peças, todas explicadas passo a passo... É só seguir o passo a passo!</p>
         
-        <!-- Grid de Fotos das Peças -->
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <!-- Substitua os caminhos das imagens pelas suas fotos reais -->
             <img src="foto1.jpg" alt="Peça de Crochê 1" class="w-full h-48 md:h-64 object-cover rounded-xl shadow">
             <img src="foto2.jpg" alt="Peça de Crochê 2" class="w-full h-48 md:h-64 object-cover rounded-xl shadow">
             <img src="foto3.jpg" alt="Peça de Crochê 3" class="w-full h-48 md:h-64 object-cover rounded-xl shadow">
@@ -96,8 +96,7 @@
         </h2>
         
         <div class="max-w-md mx-auto mb-6">
-            <!-- Imagem Mockup dos Dispositivos / Ebook -->
-            <img src="mockup.png" alt="Mockup Crochê que Vende" class="w-full h-auto mx-auto drop-shadow-xl">
+            <img src="capa.png" alt="Capa Ebook Crochê que Vende" class="w-full h-auto mx-auto drop-shadow-xl rounded-lg">
         </div>
 
         <p class="text-xs md:text-sm text-stone-500 mb-4">Clique no botão abaixo e obtenha acesso imediato a esse Guia passo a passo!</p>
@@ -115,7 +114,6 @@
                 Confira alguns depoimentos das alunas que adquiriram o guia
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Depoimento 1 -->
                 <div class="bg-white p-6 rounded-2xl shadow border border-pink-100 flex flex-col justify-between">
                     <p class="text-stone-700 italic text-sm mb-4">"Gente, as receitas são super bem explicadas! Já fiz meu primeiro chaveirinho e consegui vender para uma vizinha no mesmo dia."</p>
                     <div>
@@ -124,7 +122,6 @@
                         <span class="text-xs text-stone-400">Aluna Verificada</span>
                     </div>
                 </div>
-                <!-- Depoimento 2 -->
                 <div class="bg-white p-6 rounded-2xl shadow border border-pink-100 flex flex-col justify-between">
                     <p class="text-stone-700 italic text-sm mb-4">"Eu não sabia ler gráficos de crochê e achava difícil precificar. O e-book me ajudou demais a organizar minhas peças e vender com lucro!"</p>
                     <div>
@@ -133,7 +130,6 @@
                         <span class="text-xs text-stone-400">Aluna Verificada</span>
                     </div>
                 </div>
-                <!-- Depoimento 3 -->
                 <div class="bg-white p-6 rounded-2xl shadow border border-pink-100 flex flex-col justify-between">
                     <p class="text-stone-700 italic text-sm mb-4">"Material maravilhoso! O suporte e os modelos de bolsas são incríveis. Recomendo para todas que querem fazer renda em casa."</p>
                     <div>
@@ -204,13 +200,12 @@
         </div>
     </section>
 
-    <!-- Oferta e Preço com Cronômetro fictício -->
+    <!-- Oferta e Preço -->
     <section class="py-12 px-4 text-center max-w-xl mx-auto">
         <div class="border-2 border-dashed border-pink-300 bg-pink-50 p-8 rounded-3xl shadow-sm">
             <p class="text-xs font-bold text-stone-500 uppercase">De <span class="line-through text-red-500">R$ 67,00</span> por apenas <span class="text-emerald-600 text-lg">R$ 14,90</span></p>
             <p class="text-xs font-semibold text-pink-custom uppercase mt-1 mb-4">Promoção acaba em:</p>
             
-            <!-- Contador Fictício -->
             <div class="flex justify-center space-x-4 mb-6">
                 <div class="bg-white px-4 py-2 rounded-lg border border-pink-200">
                     <span class="text-2xl font-bold text-pink-custom">00</span>
@@ -233,7 +228,7 @@
         </div>
     </section>
 
-    <!-- FAQ - Perguntas Frequentes -->
+    <!-- FAQ -->
     <section class="py-12 px-4 max-w-4xl mx-auto border-t border-stone-200">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-stone-800 mb-10">
             Perguntas Frequentes Respondidas
