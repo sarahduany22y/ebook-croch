@@ -4,17 +4,219 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guia Crochê & Amigurumi Profissional</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts para carregamento rápido e leve -->
+  
+  <!-- Fonte do Google para visualização bonita e moderna -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #f4f6f8;
+      color: #333333;
+      line-height: 1.6;
+    }
+
+    .top-bar {
+      background-color: #e91e63;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 15px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+
+    .hero {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 22px 18px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      margin-bottom: 20px;
+    }
+
+    .main-title {
+      font-size: 1.4rem;
+      color: #1a1a1a;
+      line-height: 1.35;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 0.92rem;
+      color: #555555;
+      margin-bottom: 18px;
+    }
+
+    /* VÍDEO RESTRITO E CENTRALIZADO */
+    .video-container {
+      width: 100%;
+      max-width: 100%;
+      margin: 15px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #000000;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .video-hint {
+      font-size: 0.8rem;
+      color: #666666;
+      margin-top: 6px;
+    }
+
+    /* BOTÃO CTA ESTILIZADO */
+    .cta-block {
+      margin-top: 18px;
+      text-align: center;
+    }
+
+    .btn-primary {
+      display: block;
+      width: 100%;
+      background-color: #25d366;
+      color: #ffffff !important;
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-decoration: none !important;
+      padding: 16px 12px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background-color: #20ba5a;
+    }
+
+    .security-info {
+      font-size: 0.8rem;
+      color: #555555;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    /* CARDS E SEÇÕES */
+    .content-breakdown, .bonus-section, .pricing-table-section {
+      background: #ffffff;
+      padding: 20px 18px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #1a1a1a;
+      margin-bottom: 15px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .cards-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card {
+      background: #f1f8e9;
+      padding: 14px;
+      border-radius: 8px;
+      border-left: 5px solid #25d366;
+    }
+
+    .card h3 {
+      font-size: 0.98rem;
+      color: #2e7d32;
+      margin-bottom: 4px;
+    }
+
+    .card p {
+      font-size: 0.86rem;
+      color: #444444;
+    }
+
+    /* LISTA DE BÔNUS */
+    .bonus-list {
+      list-style: none;
+    }
+
+    .bonus-list li {
+      font-size: 0.88rem;
+      padding: 10px 0;
+      border-bottom: 1px dashed #e0e0e0;
+    }
+
+    .bonus-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* TABELA DE PREÇOS */
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .pricing-table th, .pricing-table td {
+      padding: 10px;
+      text-align: left;
+      font-size: 0.85rem;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .pricing-table th {
+      background-color: #f8f9fa;
+      color: #666666;
+    }
+
+    .total-row td {
+      font-size: 0.95rem;
+      border-bottom: none;
+      padding-top: 15px;
+    }
+
+    .highlight-price {
+      color: #e91e63;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.75rem;
+      color: #888888;
+    }
+  </style>
 </head>
 <body>
 
   <!-- BANNER SUPERIOR DE AVISO -->
   <header class="top-bar">
-    <p>🔥 OFERTA ESPECIAL • ACESSO IMEDIATO NO SEU E-MAIL</p>
+    🔥 OFERTA ESPECIAL • ACESSO IMEDIATO NO SEU E-MAIL
   </header>
 
   <main class="container">
@@ -32,8 +234,8 @@
           <source src="video.mp4" type="video/mp4">
           Seu navegador não suporta a exibição deste vídeo.
         </video>
-        <p class="video-hint">💡 *Clique no vídeo para dar play e ativar o som.*</p>
       </div>
+      <p class="video-hint">💡 *Clique no vídeo para dar play e ativar o som.*</p>
 
       <!-- BOTÃO DE AÇÃO PRINCIPAL -->
       <div class="cta-block">
@@ -44,7 +246,7 @@
       </div>
     </section>
 
-    <!-- O QUE VOCÊ VAI RECEBER (DEMONSTRAÇÃO DO CONTEÚDO) -->
+    <!-- O QUE VOCÊ VAI RECEBER -->
     <section class="content-breakdown">
       <h2>O que você vai receber no seu e-mail:</h2>
       <div class="cards-grid">
@@ -63,7 +265,7 @@
       </div>
     </section>
 
-    <!-- ORGANIZAÇÃO DOS BÔNUS (VALOR AGREGADO) -->
+    <!-- ORGANIZAÇÃO DOS BÔNUS -->
     <section class="bonus-section">
       <h2>Bônus Exclusivos Inclusos no Pacote:</h2>
       <ul class="bonus-list">
@@ -73,7 +275,7 @@
       </ul>
     </section>
 
-    <!-- ANCORAGEM DE PREÇO E TRANSPARÊNCIA -->
+    <!-- ANCORAGEM DE PREÇO -->
     <section class="pricing-table-section">
       <h2>Resumo do seu pedido:</h2>
       <table class="pricing-table">
