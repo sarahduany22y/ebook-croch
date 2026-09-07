@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guia Crochê & Amigurumi Profissional</title>
   
-  <!-- Fonte do Google para visualização bonita e moderna -->
+  <!-- Fonte do Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
     }
 
     .container {
-      max-width: 650px;
+      max-width: 680px;
       margin: 0 auto;
       padding: 15px;
     }
@@ -63,11 +63,9 @@
       margin-bottom: 18px;
     }
 
-    /* VÍDEO RESTRITO E CENTRALIZADO */
     .video-container {
       width: 100%;
-      max-width: 100%;
-      margin: 15px 0;
+      margin: 15px 0 5px 0;
       border-radius: 10px;
       overflow: hidden;
       background-color: #000000;
@@ -82,12 +80,11 @@
     .video-hint {
       font-size: 0.8rem;
       color: #666666;
-      margin-top: 6px;
+      margin-bottom: 15px;
     }
 
-    /* BOTÃO CTA ESTILIZADO */
     .cta-block {
-      margin-top: 18px;
+      margin-top: 15px;
       text-align: center;
     }
 
@@ -117,10 +114,10 @@
       font-weight: 500;
     }
 
-    /* CARDS E SEÇÕES */
-    .content-breakdown, .bonus-section, .pricing-table-section {
+    /* SEÇÕES GERAIS */
+    .section-box {
       background: #ffffff;
-      padding: 20px 18px;
+      padding: 22px 18px;
       border-radius: 12px;
       margin-bottom: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.06);
@@ -134,6 +131,89 @@
       font-weight: 700;
     }
 
+    .section-subtitle {
+      font-size: 0.88rem;
+      color: #666;
+      text-align: center;
+      margin-top: -10px;
+      margin-bottom: 15px;
+    }
+
+    /* DEMONSTRAÇÃO DO PRODUTO (IMAGENS DO EBOOK) */
+    .ebook-preview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .cover-img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 8px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .gallery-caption {
+      font-size: 0.75rem;
+      color: #555;
+      margin-top: 4px;
+    }
+
+    /* DEPOIMENTOS EM TEXTO LIMPOS */
+    .testimonials-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .testimonial-card {
+      background: #f8f9fa;
+      padding: 14px;
+      border-radius: 8px;
+      border-left: 4px solid #e91e63;
+    }
+
+    .stars {
+      color: #ffc107;
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+
+    .testimonial-text {
+      font-size: 0.86rem;
+      color: #444;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-top: 6px;
+    }
+
+    /* CARDS O QUE VOCÊ RECEBE */
     .cards-grid {
       display: flex;
       flex-direction: column;
@@ -158,22 +238,7 @@
       color: #444444;
     }
 
-    /* LISTA DE BÔNUS */
-    .bonus-list {
-      list-style: none;
-    }
-
-    .bonus-list li {
-      font-size: 0.88rem;
-      padding: 10px 0;
-      border-bottom: 1px dashed #e0e0e0;
-    }
-
-    .bonus-list li:last-child {
-      border-bottom: none;
-    }
-
-    /* TABELA DE PREÇOS */
+    /* TABELA DE PREÇOS REORGANIZADA */
     .pricing-table {
       width: 100%;
       border-collapse: collapse;
@@ -204,6 +269,29 @@
       font-weight: 700;
     }
 
+    /* FAQ */
+    .faq-item {
+      margin-bottom: 12px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 3px;
+    }
+
+    .faq-answer {
+      font-size: 0.85rem;
+      color: #555;
+    }
+
     footer {
       text-align: center;
       padding: 20px 10px;
@@ -221,21 +309,21 @@
 
   <main class="container">
     
-    <!-- PRIMEIRA DOBRA: PROMESSA DIRETA E ÚNICA -->
+    <!-- PRIMEIRA DOBRA -->
     <section class="hero">
       <h1 class="main-title">Aprenda a Criar e Vender 30 Peças Lucrativas de Crochê e Amigurumis</h1>
       <p class="subtitle">
         Guia prático em PDF com receitas 100% em português, contagem exata de pontos, lista de materiais e tabela de precificação para você lucrar em casa.
       </p>
 
-      <!-- VÍDEO COMPACTO (PAUSADO E MUDO POR PADRÃO) -->
+      <!-- VÍDEO COMPACTO -->
       <div class="video-container">
-        <video id="promoVideo" controls preload="metadata" muted poster="thumbnail.jpg">
+        <video id="promoVideo" controls preload="metadata" muted poster="Capa.png">
           <source src="video.mp4" type="video/mp4">
           Seu navegador não suporta a exibição deste vídeo.
         </video>
       </div>
-      <p class="video-hint">💡 *Clique no vídeo para dar play e ativar o som.*</p>
+      <p class="video-hint">💡 *Assista ao vídeo para ver os detalhes do material.*</p>
 
       <!-- BOTÃO DE AÇÃO PRINCIPAL -->
       <div class="cta-block">
@@ -246,77 +334,167 @@
       </div>
     </section>
 
-    <!-- O QUE VOCÊ VAI RECEBER -->
-    <section class="content-breakdown">
-      <h2>O que você vai receber no seu e-mail:</h2>
-      <div class="cards-grid">
-        <div class="card">
-          <h3>📖 30 Receitas Passo a Passo</h3>
-          <p>Instruções detalhadas em português com contagem de pontos e gráficos simples para criar peças perfeitas.</p>
-        </div>
-        <div class="card">
-          <h3>💰 Tabela de Precificação</h3>
-          <p>Aprenda exatamente como calcular o custo dos materiais, a sua hora trabalhada e o lucro final da peça.</p>
-        </div>
-        <div class="card">
-          <h3>🧸 Coleção de Amigurumis</h3>
-          <p>Aprenda a confeccionar bichinhos, bonecas e personagens de alta procura e excelente margem de lucro.</p>
+    <!-- AMOSTRA REAL DO PRODUTO (DEMONSTRAÇÃO VISUAL) -->
+    <section class="section-box">
+      <h2>Veja o seu material por dentro:</h2>
+      <p class="section-subtitle">Arquivos digitais em alta resolução prontos para abrir no celular ou imprimir.</p>
+      
+      <div class="ebook-preview">
+        <img src="Capa.png" alt="Capa do Ebook Crochê Profissional" class="cover-img">
+        
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="foto1.jpg" alt="Página de receita com contagem de pontos" class="gallery-img">
+            <p class="gallery-caption">Receitas passo a passo detalhadas</p>
+          </div>
+          <div class="gallery-item">
+            <img src="foto2.jpg" alt="Lista de materiais e símbolos" class="gallery-img">
+            <p class="gallery-caption">Lista completa de materiais</p>
+          </div>
+          <div class="gallery-item">
+            <img src="foto3.jpg" alt="Tabela de precificação" class="gallery-img">
+            <p class="gallery-caption">Tabela simples de precificação</p>
+          </div>
+          <div class="gallery-item">
+            <img src="foto4.jpg" alt="Exemplo de peça finalizada" class="gallery-img">
+            <p class="gallery-caption">Modelos de rápida produção</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ORGANIZAÇÃO DOS BÔNUS -->
-    <section class="bonus-section">
-      <h2>Bônus Exclusivos Inclusos no Pacote:</h2>
-      <ul class="bonus-list">
-        <li><strong>Bônus 1:</strong> Mega Biblioteca com 1.500 Receitas Auxiliares (Categorizadas por nível de dificuldade).</li>
-        <li><strong>Bônus 2:</strong> Guia de Abreviações e Símbolos do Crochê em Português.</li>
-        <li><strong>Bônus 3:</strong> Guia Rápido de Vendas para Redes Sociais.</li>
-      </ul>
+    <!-- O QUE VOCÊ VAI RECEBER -->
+    <section class="section-box">
+      <h2>O que você recebe no seu e-mail:</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>📖 Guia Principal: 30 Receitas Passo a Passo</h3>
+          <p>Instruções claras em português com contagem de pontos para confeccionar peças de alta procura para encomendas.</p>
+        </div>
+        <div class="card">
+          <h3>💰 Tabela Prática de Precificação</h3>
+          <p>Aprenda a calcular facilmente o valor do material, suas horas trabalhadas e a margem de lucro correta.</p>
+        </div>
+        <div class="card">
+          <h3>🧸 Coleção de Amigurumis Especiais</h3>
+          <p>Modelos de bichinhos e peças infantis perfeitas para montar catálogo ou presentear.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEÇAS QUE VOCÊ PODERÁ FAZER -->
+    <section class="section-box">
+      <h2>Exemplos de peças que você vai aprender:</h2>
+      <p class="section-subtitle">Modelos selecionados pela facilidade e excelente aceitação do público.</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="foto4.jpg" alt="Amigurumi de destaque" class="gallery-img">
+          <p class="gallery-caption"><strong>Peças Infantis:</strong> Ideal para lembrancinhas e presentes.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="foto5.jpg" alt="Peça utilitária em crochê" class="gallery-img">
+          <p class="gallery-caption"><strong>Decoração & Acessórios:</strong> Confeccionadas em poucas horas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROVA SOCIAL (DEPOIMENTOS EM TEXTO LIMPOS) -->
+    <section class="section-box">
+      <h2>O que dizem as artesãs que já baixaram:</h2>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"As receitas são super explicadinhas! Eu tinha muita dificuldade de entender os pontos de amigurumi, mas com a contagem certinha do guia consegui fazer minha primeira peça no mesmo dia."</p>
+          <p class="testimonial-author">— Maria do Carmo S., São Paulo/SP</p>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"A tabela de precificação valeu cada centavo. Eu vendia minhas peças muito barato por não saber calcular a linha. O material é muito organizado."</p>
+          <p class="testimonial-author">— Luciana M., Belo Horizonte/MG</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Chegou na hora no meu e-mail assim que paguei o Pix. Já baixei no meu celular e abro direto enquanto estou crochetando."</p>
+          <p class="testimonial-author">— Ana Paula R., Curitiba/PR</p>
+        </div>
+      </div>
     </section>
 
     <!-- ANCORAGEM DE PREÇO -->
-    <section class="pricing-table-section">
-      <h2>Resumo do seu pedido:</h2>
+    <section class="section-box">
+      <h2>Resumo da sua compra hoje:</h2>
       <table class="pricing-table">
         <thead>
           <tr>
-            <th>Item</th>
-            <th>Valor Normal</th>
+            <th>Você recebe:</th>
+            <th>Conteúdo</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Guia Principal: 30 Receitas + Precificação</td>
-            <td>R$ 47,00</td>
+            <td><strong>Guia Principal</strong></td>
+            <td>30 Receitas passo a passo + lista de materiais</td>
           </tr>
           <tr>
-            <td>Mega Biblioteca de Amigurumis (1.500 receitas)</td>
-            <td>R$ 37,00</td>
+            <td><strong>Bônus 1</strong></td>
+            <td>Biblioteca com 1.500 receitas auxiliares em PDF</td>
           </tr>
           <tr>
-            <td>Tabela de Precificação e Guia de Vendas</td>
-            <td>R$ 29,00</td>
+            <td><strong>Bônus 2</strong></td>
+            <td>Tabela prática de precificação de peças</td>
+          </tr>
+          <tr>
+            <td><strong>Bônus 3</strong></td>
+            <td>Guia rápido para divulgação e encomendas</td>
           </tr>
           <tr class="total-row">
-            <td><strong>PREÇO HOJE:</strong></td>
+            <td><strong>VALOR TOTAL:</strong></td>
             <td><strong class="highlight-price">APENAS R$ 14,90</strong></td>
           </tr>
         </tbody>
       </table>
 
-      <div class="cta-block" style="margin-top: 25px;">
+      <div class="cta-block" style="margin-top: 22px;">
         <a href="https://link.syncpayments.com.br/ZuVCJK" class="btn-primary">
           SIM! QUERO APROVEITAR POR R$ 14,90
         </a>
-        <p class="security-info">Garantia incondicional de 7 dias • Acesso imediato</p>
+        <p class="security-info">Garantia incondicional de 7 dias • Acesso imediato no e-mail</p>
+      </div>
+    </section>
+
+    <!-- PERGUNTAS FREQUENTES (FAQ) -->
+    <section class="section-box">
+      <h2>Dúvidas Frequentes:</h2>
+      
+      <div class="faq-item">
+        <p class="faq-question">Como vou receber o meu material?</p>
+        <p class="faq-answer">O acesso é imediato. Assim que a sua compra for confirmada, você receberá o link para baixar os arquivos PDF diretamente no seu e-mail.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Sou iniciante, vou conseguir fazer?</p>
+        <p class="faq-answer">Sim! As receitas contam com explicação passo a passo em português, lista de materiais recomendados e contagem exata de pontos.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Quais as formas de pagamento?</p>
+        <p class="faq-answer">Aceitamos Pix (com liberação imediata) e Cartão de Crédito.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">E se eu não gostar do conteúdo?</p>
+        <p class="faq-answer">Você tem 7 dias de garantia incondicional. Se achar que o material não é para você, basta solicitar o reembolso total.</p>
       </div>
     </section>
 
   </main>
 
   <footer>
-    <p>© 2026 Guia Crochê Profissional. Todos os direitos reservados.</p>
+    <p>© 2026 Guia Crochê Profissional. Todos os direitos reservados.<br>Suporte ao cliente via e-mail após a compra.</p>
   </footer>
 
 </body>
