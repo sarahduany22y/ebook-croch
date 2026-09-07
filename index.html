@@ -126,7 +126,7 @@
     h2 {
       font-size: 1.2rem;
       color: #1a1a1a;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       text-align: center;
       font-weight: 700;
     }
@@ -135,31 +135,15 @@
       font-size: 0.88rem;
       color: #666;
       text-align: center;
-      margin-top: -10px;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
 
-    /* DEMONSTRAÇÃO DO PRODUTO (IMAGENS DO EBOOK) */
-    .ebook-preview {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .cover-img {
-      width: 100%;
-      max-width: 260px;
-      border-radius: 8px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-    }
-
+    /* GALERIA DE PEÇAS */
     .gallery-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap: 12px;
       width: 100%;
-      margin-top: 10px;
     }
 
     .gallery-item {
@@ -168,19 +152,45 @@
 
     .gallery-img {
       width: 100%;
-      height: 140px;
+      height: 150px;
       object-fit: cover;
       border-radius: 8px;
       border: 1px solid #e0e0e0;
     }
 
     .gallery-caption {
-      font-size: 0.75rem;
+      font-size: 0.8rem;
       color: #555;
-      margin-top: 4px;
+      margin-top: 6px;
+      line-height: 1.3;
     }
 
-    /* DEPOIMENTOS EM TEXTO LIMPOS */
+    /* CARDS O QUE VOCÊ RECEBE */
+    .cards-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card {
+      background: #f1f8e9;
+      padding: 14px;
+      border-radius: 8px;
+      border-left: 5px solid #25d366;
+    }
+
+    .card h3 {
+      font-size: 0.98rem;
+      color: #2e7d32;
+      margin-bottom: 4px;
+    }
+
+    .card p {
+      font-size: 0.86rem;
+      color: #444444;
+    }
+
+    /* DEPOIMENTOS */
     .testimonials-grid {
       display: flex;
       flex-direction: column;
@@ -213,32 +223,7 @@
       margin-top: 6px;
     }
 
-    /* CARDS O QUE VOCÊ RECEBE */
-    .cards-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .card {
-      background: #f1f8e9;
-      padding: 14px;
-      border-radius: 8px;
-      border-left: 5px solid #25d366;
-    }
-
-    .card h3 {
-      font-size: 0.98rem;
-      color: #2e7d32;
-      margin-bottom: 4px;
-    }
-
-    .card p {
-      font-size: 0.86rem;
-      color: #444444;
-    }
-
-    /* TABELA DE PREÇOS REORGANIZADA */
+    /* TABELA DE PREÇOS */
     .pricing-table {
       width: 100%;
       border-collapse: collapse;
@@ -302,7 +287,7 @@
 </head>
 <body>
 
-  <!-- BANNER SUPERIOR DE AVISO -->
+  <!-- BANNER SUPERIOR -->
   <header class="top-bar">
     🔥 OFERTA ESPECIAL • ACESSO IMEDIATO NO SEU E-MAIL
   </header>
@@ -318,7 +303,7 @@
 
       <!-- VÍDEO COMPACTO -->
       <div class="video-container">
-        <video id="promoVideo" controls preload="metadata" muted poster="Capa.png">
+        <video id="promoVideo" controls preload="metadata" muted>
           <source src="video.mp4" type="video/mp4">
           Seu navegador não suporta a exibição deste vídeo.
         </video>
@@ -334,31 +319,27 @@
       </div>
     </section>
 
-    <!-- AMOSTRA REAL DO PRODUTO (DEMONSTRAÇÃO VISUAL) -->
+    <!-- EXEMPLOS DE PEÇAS (ÚNICA GALERIA VISUAL) -->
     <section class="section-box">
-      <h2>Veja o seu material por dentro:</h2>
-      <p class="section-subtitle">Arquivos digitais em alta resolução prontos para abrir no celular ou imprimir.</p>
+      <h2>Exemplos de peças que você vai aprender:</h2>
+      <p class="section-subtitle">Modelos selecionados pela facilidade e excelente aceitação do público.</p>
       
-      <div class="ebook-preview">
-        <img src="Capa.png" alt="Capa do Ebook Crochê Profissional" class="cover-img">
-        
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="foto1.jpg" alt="Página de receita com contagem de pontos" class="gallery-img">
-            <p class="gallery-caption">Receitas passo a passo detalhadas</p>
-          </div>
-          <div class="gallery-item">
-            <img src="foto2.jpg" alt="Lista de materiais e símbolos" class="gallery-img">
-            <p class="gallery-caption">Lista completa de materiais</p>
-          </div>
-          <div class="gallery-item">
-            <img src="foto3.jpg" alt="Tabela de precificação" class="gallery-img">
-            <p class="gallery-caption">Tabela simples de precificação</p>
-          </div>
-          <div class="gallery-item">
-            <img src="foto4.jpg" alt="Exemplo de peça finalizada" class="gallery-img">
-            <p class="gallery-caption">Modelos de rápida produção</p>
-          </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="foto1.jpg" alt="Amigurumis Minions" class="gallery-img">
+          <p class="gallery-caption"><strong>Personagens Populares:</strong> Alta procura para presentes e decoração.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="foto2.jpg" alt="Peça infantil fofinha" class="gallery-img">
+          <p class="gallery-caption"><strong>Peças Infantis:</strong> Ideais para lembrancinhas de maternidade.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="foto3.jpg" alt="Amigurumi Religioso" class="gallery-img">
+          <p class="gallery-caption"><strong>Coleção Sacra:</strong> Excelente opção para vendas o ano todo.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="foto4.jpg" alt="Bob Esponja e Patrick" class="gallery-img">
+          <p class="gallery-caption"><strong>Modelos Rápidos:</strong> Confeccionados em poucas horas.</p>
         </div>
       </div>
     </section>
@@ -382,24 +363,7 @@
       </div>
     </section>
 
-    <!-- PEÇAS QUE VOCÊ PODERÁ FAZER -->
-    <section class="section-box">
-      <h2>Exemplos de peças que você vai aprender:</h2>
-      <p class="section-subtitle">Modelos selecionados pela facilidade e excelente aceitação do público.</p>
-      
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="foto4.jpg" alt="Amigurumi de destaque" class="gallery-img">
-          <p class="gallery-caption"><strong>Peças Infantis:</strong> Ideal para lembrancinhas e presentes.</p>
-        </div>
-        <div class="gallery-item">
-          <img src="foto5.jpg" alt="Peça utilitária em crochê" class="gallery-img">
-          <p class="gallery-caption"><strong>Decoração & Acessórios:</strong> Confeccionadas em poucas horas.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROVA SOCIAL (DEPOIMENTOS EM TEXTO LIMPOS) -->
+    <!-- PROVA SOCIAL -->
     <section class="section-box">
       <h2>O que dizem as artesãs que já baixaram:</h2>
       
@@ -466,7 +430,7 @@
       </div>
     </section>
 
-    <!-- PERGUNTAS FREQUENTES (FAQ) -->
+    <!-- PERGUNTAS FREQUENTES -->
     <section class="section-box">
       <h2>Dúvidas Frequentes:</h2>
       
