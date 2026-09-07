@@ -1,498 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crochê que Vende - 30 Receitas Lucrativas</title>
-
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7KTN7GPTN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-Q7KTN7GPTN');
-    </script>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .bg-pink-custom { background-color: #d82b7d; }
-        .bg-pink-hover:hover { background-color: #b81f66; }
-        .text-pink-custom { color: #d82b7d; }
-        .border-pink-custom { border-color: #d82b7d; }
-        
-        @keyframes pulse-btn {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.04); }
-        }
-        .animate-cta {
-            animation: pulse-btn 2s infinite ease-in-out;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Crochê & Amigurumi Profissional</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts para carregamento rápido e leve -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-50 text-stone-800 font-sans antialiased selection:bg-pink-200">
+<body>
 
-    <!-- Top Bar de Urgência -->
-    <div class="bg-stone-900 text-amber-300 py-2 px-4 text-center text-xs md:text-sm font-bold tracking-wide flex items-center justify-center space-x-2 border-b border-amber-500/30">
-        <span>⚡ OFERTA ESPECIAL DISPONÍVEL POR TEMPO LIMITADO</span>
-    </div>
+  <!-- BANNER SUPERIOR DE AVISO -->
+  <header class="top-bar">
+    <p>🔥 OFERTA ESPECIAL • ACESSO IMEDIATO NO SEU E-MAIL</p>
+  </header>
 
-    <!-- Header / Vídeo de Vendas -->
-    <header class="bg-gradient-to-b from-pink-100 via-pink-50/60 to-slate-50 py-8 px-4 text-center">
-        <div class="max-w-3xl mx-auto">
-            
-            <!-- Headline Principal -->
-            <h1 class="text-2xl md:text-4xl font-extrabold text-pink-custom tracking-tight leading-snug uppercase mb-6 drop-shadow-sm">
-                Aprenda a fazer <span class="bg-pink-200 text-pink-900 px-2 py-0.5 rounded-lg">30 peças lucrativas</span> de crochê + amigurumi e transforme seu hobby em renda em casa!
-            </h1>
+  <main class="container">
+    
+    <!-- PRIMEIRA DOBRA: PROMESSA DIRETA E ÚNICA -->
+    <section class="hero">
+      <h1 class="main-title">Aprenda a Criar e Vender 30 Peças Lucrativas de Crochê e Amigurumis</h1>
+      <p class="subtitle">
+        Guia prático em PDF com receitas 100% em português, contagem exata de pontos, lista de materiais e tabela de precificação para você lucrar em casa.
+      </p>
 
-            <!-- Área do Vídeo MP4 Direct -->
-            <div class="relative w-full max-w-2xl mx-auto aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl border-4 border-white mb-4 group">
-                <video class="w-full h-full object-cover" controls playsinline>
-                    <source src="video.mp4" type="video/mp4">
-                    Seu navegador não suporta a exibição deste vídeo.
-                </video>
-            </div>
+      <!-- VÍDEO COMPACTO (PAUSADO E MUDO POR PADRÃO) -->
+      <div class="video-container">
+        <video id="promoVideo" controls preload="metadata" muted poster="thumbnail.jpg">
+          <source src="video.mp4" type="video/mp4">
+          Seu navegador não suporta a exibição deste vídeo.
+        </video>
+        <p class="video-hint">💡 *Clique no vídeo para dar play e ativar o som.*</p>
+      </div>
 
-            <!-- Badges de Confiança abaixo do vídeo -->
-            <div class="flex flex-wrap justify-center items-center gap-4 text-xs font-semibold text-stone-600 mb-6">
-                <span class="flex items-center gap-1"><svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Acesso Imediato</span>
-                <span class="flex items-center gap-1"><svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Compra 100% Segura</span>
-                <span class="flex items-center gap-1"><svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Garantia de 7 Dias</span>
-            </div>
-
-            <!-- Botão 1 -->
-            <div class="mt-2">
-                <a href="https://link.syncpayments.com.br/ZuVCJK" class="animate-cta inline-block w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-black text-xl px-10 py-5 rounded-full shadow-xl shadow-emerald-500/20 transform transition uppercase tracking-wide">
-                    QUERO APRENDER AGORA! ➔
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- SEÇÃO BÔNUS REFORMULADA E DETALHADA -->
-    <section class="py-8 px-4 max-w-4xl mx-auto">
-        <div class="bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 border-2 border-amber-400/80 rounded-3xl p-6 md:p-8 shadow-xl relative overflow-hidden">
-            
-            <div class="text-center mb-6">
-                <span class="bg-amber-500 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full uppercase tracking-wider inline-block mb-3 shadow-md">
-                    🎁 SUPER BÔNUS EXCLUSIVO DE HOJE
-                </span>
-                <h2 class="text-2xl md:text-3xl font-black text-stone-900 mb-2 uppercase">
-                    GARANTA HOJE E LEVE +1.500 RECEITAS DE AMIGURUMIS PREMIUM!
-                </h2>
-                <p class="text-stone-700 text-sm md:text-base font-medium max-w-2xl mx-auto">
-                    Além do guia principal, você vai receber um pacote completo com coleções temáticas exclusivas, guias de vendas e suporte complementar:
-                </p>
-            </div>
-
-            <!-- Grid de Bônus -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-3xl mx-auto text-left">
-                <div class="bg-white/90 backdrop-blur p-4 rounded-2xl border border-amber-200/80 flex items-center justify-between shadow-sm hover:border-amber-400 transition">
-                    <div class="flex items-center space-x-3">
-                        <span class="text-2xl">🦸‍♂️</span>
-                        <span class="text-xs md:text-sm font-bold text-stone-800">Coleção Super-Heróis & Personagens</span>
-                    </div>
-                    <span class="text-xs font-black text-red-500 line-through bg-red-50 px-2 py-0.5 rounded">R$ 40</span>
-                </div>
-
-                <div class="bg-white/90 backdrop-blur p-4 rounded-2xl border border-amber-200/80 flex items-center justify-between shadow-sm hover:border-amber-400 transition">
-                    <div class="flex items-center space-x-3">
-                        <span class="text-2xl">🦄</span>
-                        <span class="text-xs md:text-sm font-bold text-stone-800">Especial Unicórnios & Fantasia</span>
-                    </div>
-                    <span class="text-xs font-black text-red-500 line-through bg-red-50 px-2 py-0.5 rounded">R$ 40</span>
-                </div>
-
-                <div class="bg-white/90 backdrop-blur p-4 rounded-2xl border border-amber-200/80 flex items-center justify-between shadow-sm hover:border-amber-400 transition">
-                    <div class="flex items-center space-x-3">
-                        <span class="text-2xl">🦁</span>
-                        <span class="text-xs md:text-sm font-bold text-stone-800">Bichinhos, Animais & Safari</span>
-                    </div>
-                    <span class="text-xs font-black text-red-500 line-through bg-red-50 px-2 py-0.5 rounded">R$ 40</span>
-                </div>
-
-                <div class="bg-white/90 backdrop-blur p-4 rounded-2xl border border-amber-200/80 flex items-center justify-between shadow-sm hover:border-amber-400 transition">
-                    <div class="flex items-center space-x-3">
-                        <span class="text-2xl">🧸</span>
-                        <span class="text-xs md:text-sm font-bold text-stone-800">Mini Amigurumis & Lembrancinhas</span>
-                    </div>
-                    <span class="text-xs font-black text-red-500 line-through bg-red-50 px-2 py-0.5 rounded">R$ 40</span>
-                </div>
-
-                <div class="bg-white/90 backdrop-blur p-4 rounded-2xl border border-amber-200/80 flex items-center justify-between shadow-sm hover:border-amber-400 transition">
-                    <div class="flex items-center space-x-3">
-                        <span class="text-2xl">⚡</span>
-                        <span class="text-xs md:text-sm font-bold text-stone-800">Coleção Pokémon e Animes</span>
-                    </div>
-                    <span class="text-xs font-black text-red-500 line-through bg-red-50 px-2 py-0.5 rounded">R$ 40</span>
-                </div>
-
-                <div class="bg-white/90 backdrop-blur p-4 rounded-2xl border border-amber-200/80 flex items-center justify-between shadow-sm hover:border-amber-400 transition">
-                    <div class="flex items-center space-x-3">
-                        <span class="text-2xl">📈</span>
-                        <span class="text-xs md:text-sm font-bold text-stone-800">Guia Prático: Como Vender Suas Peças</span>
-                    </div>
-                    <span class="text-xs font-black text-red-500 line-through bg-red-50 px-2 py-0.5 rounded">R$ 20</span>
-                </div>
-
-                <div class="bg-white/90 backdrop-blur p-4 rounded-2xl border border-amber-200/80 flex items-center justify-between shadow-sm hover:border-amber-400 transition md:col-span-2">
-                    <div class="flex items-center space-x-3">
-                        <span class="text-2xl">📋</span>
-                        <span class="text-xs md:text-sm font-bold text-stone-800">Ficha Técnica & Precificação Precisa</span>
-                    </div>
-                    <span class="text-xs font-black text-red-500 line-through bg-red-50 px-2 py-0.5 rounded">R$ 20</span>
-                </div>
-            </div>
-
-            <p class="text-center text-xs md:text-sm text-amber-900 font-extrabold uppercase mt-6 bg-amber-200/60 py-2 rounded-xl">
-                ⚠️ Todo esse material extra está incluído gratuitamente na sua compra hoje!
-            </p>
-        </div>
-    </section>
-
-    <!-- O que você vai encontrar -->
-    <section class="py-12 px-4 max-w-4xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-center text-stone-900 mb-10">
-            Com este Guia Exclusivo <span class="text-pink-custom">VOCÊ vai:</span>
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-            <div class="flex items-start space-x-3 bg-white p-5 rounded-2xl shadow-sm border border-stone-200/70">
-                <span class="bg-emerald-100 text-emerald-600 rounded-full p-1 text-sm font-bold">✓</span>
-                <p class="text-sm md:text-base text-stone-700">Ter acesso a 30 receitas detalhadas e explicadas passo a passo em português;</p>
-            </div>
-            <div class="flex items-start space-x-3 bg-white p-5 rounded-2xl shadow-sm border border-stone-200/70">
-                <span class="bg-emerald-100 text-emerald-600 rounded-full p-1 text-sm font-bold">✓</span>
-                <p class="text-sm md:text-base text-stone-700">Aprender desde peças simples e rápidas até modelos de alto valor comercial;</p>
-            </div>
-            <div class="flex items-start space-x-3 bg-white p-5 rounded-2xl shadow-sm border border-stone-200/70">
-                <span class="bg-emerald-100 text-emerald-600 rounded-full p-1 text-sm font-bold">✓</span>
-                <p class="text-sm md:text-base text-stone-700">Aprender a ler com facilidade a tabela de abreviações e pontos básicos;</p>
-            </div>
-            <div class="flex items-start space-x-3 bg-white p-5 rounded-2xl shadow-sm border border-stone-200/70">
-                <span class="bg-emerald-100 text-emerald-600 rounded-full p-1 text-sm font-bold">✓</span>
-                <p class="text-sm md:text-base text-stone-700">Saber exatamente qual agulha, fio e material utilizar em cada projeto;</p>
-            </div>
-            <div class="flex items-start space-x-3 bg-white p-5 rounded-2xl shadow-sm border border-stone-200/70">
-                <span class="bg-emerald-100 text-emerald-600 rounded-full p-1 text-sm font-bold">✓</span>
-                <p class="text-sm md:text-base text-stone-700">Aprender cuidados essenciais de lavagem e conservação para passar às clientes;</p>
-            </div>
-            <div class="flex items-start space-x-3 bg-white p-5 rounded-2xl shadow-sm border border-stone-200/70">
-                <span class="bg-emerald-100 text-emerald-600 rounded-full p-1 text-sm font-bold">✓</span>
-                <p class="text-sm md:text-base text-stone-700">Descobrir dicas de apresentação e embalagem para valorizar e vender suas peças;</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Galeria de Peças -->
-    <section class="py-12 px-4 max-w-5xl mx-auto text-center border-t border-stone-200/60">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-pink-custom uppercase mb-2">
-            Confira as LINDAS PEÇAS que você vai APRENDER a FAZER
-        </h2>
-        <p class="text-sm text-stone-600 mb-8">Chaveiros, sousplats, amigurumis, bolsas e itens de maternidade explicados em detalhes!</p>
-        
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div class="overflow-hidden rounded-2xl shadow-md border border-stone-100"><img src="foto1.jpg" alt="Peça de Crochê 1" class="w-full h-48 md:h-64 object-cover transform hover:scale-105 transition duration-300"></div>
-            <div class="overflow-hidden rounded-2xl shadow-md border border-stone-100"><img src="foto2.jpg" alt="Peça de Crochê 2" class="w-full h-48 md:h-64 object-cover transform hover:scale-105 transition duration-300"></div>
-            <div class="overflow-hidden rounded-2xl shadow-md border border-stone-100"><img src="foto3.jpg" alt="Peça de Crochê 3" class="w-full h-48 md:h-64 object-cover transform hover:scale-105 transition duration-300"></div>
-            <div class="overflow-hidden rounded-2xl shadow-md border border-stone-100"><img src="foto4.jpg" alt="Peça de Crochê 4" class="w-full h-48 md:h-64 object-cover transform hover:scale-105 transition duration-300"></div>
-            <div class="overflow-hidden rounded-2xl shadow-md border border-stone-100"><img src="foto5.jpg" alt="Peça de Crochê 5" class="w-full h-48 md:h-64 object-cover transform hover:scale-105 transition duration-300"></div>
-            <div class="overflow-hidden rounded-2xl shadow-md border border-stone-100"><img src="foto6.jpg" alt="Peça de Crochê 6" class="w-full h-48 md:h-64 object-cover transform hover:scale-105 transition duration-300"></div>
-        </div>
-    </section>
-
-    <!-- Seção do Mockup / Transformação -->
-    <section class="py-12 px-4 max-w-4xl mx-auto text-center">
-        <h3 class="text-lg font-bold text-pink-custom uppercase tracking-wide">Esse eBook é para você que quer...</h3>
-        <h2 class="text-2xl md:text-4xl font-extrabold text-stone-900 uppercase mt-1 mb-8 leading-tight">
-            Transformar fios e agulhas numa <span class="text-pink-custom">FONTE DE RENDA!</span>
-        </h2>
-        
-        <div class="max-w-md mx-auto mb-6">
-            <img src="capa.png" alt="Capa Ebook Crochê que Vende" class="w-full h-auto mx-auto drop-shadow-2xl rounded-xl">
-        </div>
-
-        <p class="text-xs md:text-sm text-stone-500 mb-6 font-medium">Clique no botão abaixo e obtenha acesso ao seu e-book em PDF!</p>
-        
-        <!-- Botão 2 -->
-        <a href="https://link.syncpayments.com.br/ZuVCJK" class="animate-cta inline-block w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-black text-xl px-10 py-5 rounded-full shadow-xl shadow-emerald-500/20 transform transition uppercase tracking-wide">
-            QUERO APRENDER AGORA! ➔
+      <!-- BOTÃO DE AÇÃO PRINCIPAL -->
+      <div class="cta-block">
+        <a href="https://link.syncpayments.com.br/ZuVCJK" class="btn-primary">
+          QUERO MEU GUIA COMPLETO POR APENAS R$ 14,90
         </a>
+        <p class="security-info">🔒 Compra 100% Segura • Receba imediatamente no seu e-mail</p>
+      </div>
     </section>
 
-    <!-- Depoimentos com Prints do WhatsApp (Sem Fotos de Pessoas) -->
-    <section class="py-12 px-4 bg-gradient-to-b from-pink-50 to-pink-100/50 border-y border-pink-100 text-center">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-extrabold text-stone-900 mb-2">
-                O que nossas alunas dizem no WhatsApp
-            </h2>
-            <p class="text-sm text-stone-600 mb-10 max-w-xl mx-auto">
-                Veja as conversas e feedbacks reais de quem adquiriu o guia e já está colocando em prática:
-            </p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Print WhatsApp 1 -->
-                <div class="bg-white rounded-3xl shadow-lg border border-pink-100 overflow-hidden transform hover:-translate-y-1 transition duration-300">
-                    <img src="whatsapp1.jpg" alt="Print do WhatsApp - Feedback Aluna 1" class="w-full h-auto object-cover">
-                </div>
-
-                <!-- Print WhatsApp 2 -->
-                <div class="bg-white rounded-3xl shadow-lg border border-pink-100 overflow-hidden transform hover:-translate-y-1 transition duration-300">
-                    <img src="whatsapp2.jpg" alt="Print do WhatsApp - Feedback Aluna 2" class="w-full h-auto object-cover">
-                </div>
-
-                <!-- Print WhatsApp 3 -->
-                <div class="bg-white rounded-3xl shadow-lg border border-pink-100 overflow-hidden transform hover:-translate-y-1 transition duration-300">
-                    <img src="whatsapp3.jpg" alt="Print do WhatsApp - Feedback Aluna 3" class="w-full h-auto object-cover">
-                </div>
-            </div>
+    <!-- O QUE VOCÊ VAI RECEBER (DEMONSTRAÇÃO DO CONTEÚDO) -->
+    <section class="content-breakdown">
+      <h2>O que você vai receber no seu e-mail:</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>📖 30 Receitas Passo a Passo</h3>
+          <p>Instruções detalhadas em português com contagem de pontos e gráficos simples para criar peças perfeitas.</p>
         </div>
-    </section>
-
-    <!-- Tópicos Reais do Ebook -->
-    <section class="py-12 px-4 max-w-4xl mx-auto text-center">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-stone-900 mb-8">
-            O que você vai encontrar dentro do e-book:
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-left">
-            <div class="flex items-center space-x-3 bg-white p-4 rounded-xl border border-stone-200/80 shadow-sm">
-                <span class="text-pink-custom text-xl">📖</span>
-                <span class="text-sm font-semibold text-stone-800">Guia de Materiais Essenciais e Agulhas</span>
-            </div>
-            <div class="flex items-center space-x-3 bg-white p-4 rounded-xl border border-stone-200/80 shadow-sm">
-                <span class="text-pink-custom text-xl">📖</span>
-                <span class="text-sm font-semibold text-stone-800">Tabela Prática de Abreviações dos Pontos</span>
-            </div>
-            <div class="flex items-center space-x-3 bg-white p-4 rounded-xl border border-stone-200/80 shadow-sm">
-                <span class="text-pink-custom text-xl">📖</span>
-                <span class="text-sm font-semibold text-stone-800">Parte 1: Receitas Fáceis e Lembrancinhas</span>
-            </div>
-            <div class="flex items-center space-x-3 bg-white p-4 rounded-xl border border-stone-200/80 shadow-sm">
-                <span class="text-pink-custom text-xl">📖</span>
-                <span class="text-sm font-semibold text-stone-800">Parte 2: Receitas para Casa e Decoração</span>
-            </div>
-            <div class="flex items-center space-x-3 bg-white p-4 rounded-xl border border-stone-200/80 shadow-sm">
-                <span class="text-pink-custom text-xl">📖</span>
-                <span class="text-sm font-semibold text-stone-800">Parte 3: Peças de Alto Valor (Bolsas e Maternidade)</span>
-            </div>
-            <div class="flex items-center space-x-3 bg-white p-4 rounded-xl border border-stone-200/80 shadow-sm">
-                <span class="text-pink-custom text-xl">📖</span>
-                <span class="text-sm font-semibold text-stone-800">Instruções de Lavagem e Conservação</span>
-            </div>
-            <div class="flex items-center space-x-3 bg-white p-4 rounded-xl border border-stone-200/80 shadow-sm">
-                <span class="text-pink-custom text-xl">📖</span>
-                <span class="text-sm font-semibold text-stone-800">Dicas de Apresentação e Embalagem para Vendas</span>
-            </div>
-            <div class="flex items-center space-x-3 bg-white p-4 rounded-xl border border-stone-200/80 shadow-sm">
-                <span class="text-pink-custom text-xl">📖</span>
-                <span class="text-sm font-semibold text-stone-800">Passo a Passo com Contagem Precisa de Pontos</span>
-            </div>
-            <div class="flex items-center space-x-3 bg-amber-50 p-4 rounded-xl border border-amber-300 shadow-sm md:col-span-2">
-                <span class="text-amber-600 text-xl">🎁</span>
-                <span class="text-sm font-bold text-amber-900">BÔNUS: Pack +1.500 Receitas Amigurumi + Guias Práticos de Vendas</span>
-            </div>
+        <div class="card">
+          <h3>💰 Tabela de Precificação</h3>
+          <p>Aprenda exatamente como calcular o custo dos materiais, a sua hora trabalhada e o lucro final da peça.</p>
         </div>
-    </section>
-
-    <!-- SEÇÃO: Quebra de Objeções Rápida e Otimizada -->
-    <section class="py-12 px-4 bg-white border-y border-stone-200/80">
-        <div class="max-w-4xl mx-auto">
-            
-            <!-- Headline e Subhead -->
-            <div class="text-center mb-10">
-                <span class="bg-pink-100 text-pink-custom text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
-                    Sua decisão com total clareza
-                </span>
-                <h2 class="text-2xl md:text-3xl font-black text-stone-900 leading-tight">
-                    Ainda está com medo de não conseguir? <span class="text-pink-custom">Veja como o Guia foi pensado para facilitar cada etapa.</span>
-                </h2>
-                <p class="text-sm md:text-base text-stone-600 mt-2 max-w-2xl mx-auto">
-                    Respondemos de forma direta às principais dúvidas de quem quer dar o primeiro passo:
-                </p>
-            </div>
-
-            <!-- Grid de Objeções -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                
-                <!-- Objeção 1: Nível de experiência -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-stone-200/80 hover:border-pink-300 transition shadow-sm">
-                    <h3 class="font-extrabold text-stone-900 text-base md:text-lg mb-2 flex items-center gap-2">
-                        <span class="text-pink-custom text-xl">❓</span> "Sou iniciante e não sei ler receitas. Consigo acompanhar?"
-                    </h3>
-                    <p class="text-xs md:text-sm text-stone-600 leading-relaxed">
-                        O e-book inclui uma <strong>Tabela Prática de Abreviações e Pontos Básicos</strong> logo nas primeiras páginas. Além disso, as 30 receitas contam com contagem de pontos passo a passo e vídeos complementares que ajudam a visualizar o processo.
-                    </p>
-                </div>
-
-                <!-- Objeção 2: Materiais e Custo -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-stone-200/80 hover:border-pink-300 transition shadow-sm">
-                    <h3 class="font-extrabold text-stone-900 text-base md:text-lg mb-2 flex items-center gap-2">
-                        <span class="text-pink-custom text-xl">❓</span> "Preciso gastar muito com linhas e agulhas para começar?"
-                    </h3>
-                    <p class="text-xs md:text-sm text-stone-600 leading-relaxed">
-                        Não. O guia indica o tipo de fio e o número de agulha ideal para cada projeto. Você pode começar por projetos mais simples, usando materiais acessíveis ou sobrinhas que já tem em casa.
-                    </p>
-                </div>
-
-                <!-- Objeção 3: Vendas e Precificação -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-stone-200/80 hover:border-pink-300 transition shadow-sm">
-                    <h3 class="font-extrabold text-stone-900 text-base md:text-lg mb-2 flex items-center gap-2">
-                        <span class="text-pink-custom text-xl">❓</span> "Sei fazer crochê, mas não sei por quanto cobrar ou como vender."
-                    </h3>
-                    <p class="text-xs md:text-sm text-stone-600 leading-relaxed">
-                        Além das 30 receitas, você recebe como bônus a <strong>Ficha Técnica de Precificação Precisa</strong> e o <strong>Guia Prático de Vendas</strong>, que ajudam a calcular o preço justo e a valorizar o seu trabalho.
-                    </p>
-                </div>
-
-                <!-- Objeção 4: Complexidade e Tempo -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-stone-200/80 hover:border-pink-300 transition shadow-sm">
-                    <h3 class="font-extrabold text-stone-900 text-base md:text-lg mb-2 flex items-center gap-2">
-                        <span class="text-pink-custom text-xl">❓</span> "As peças do guia são muito demoradas de fazer?"
-                    </h3>
-                    <p class="text-xs md:text-sm text-stone-600 leading-relaxed">
-                        A Parte 1 reúne projetos mais rápidos e simples, ideais para começar sem precisar encarar peças mais complexas logo de início. Você evolui no seu próprio ritmo.
-                    </p>
-                </div>
-
-                <!-- Objeção 5: Entrega Digital -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-stone-200/80 hover:border-pink-300 transition shadow-sm md:col-span-2">
-                    <h3 class="font-extrabold text-stone-900 text-base md:text-lg mb-2 flex items-center gap-2">
-                        <span class="text-pink-custom text-xl">❓</span> "Como e quando vou receber o meu acesso?"
-                    </h3>
-                    <p class="text-xs md:text-sm text-stone-600 leading-relaxed">
-                        O material é 100% digital. Após a confirmação do pagamento, você recebe as instruções de acesso ao e-book em PDF e aos bônus diretamente no seu e-mail, podendo acessar pelo celular, tablet, computador ou imprimir.
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- Fechamento com chamada para CTA -->
-            <div class="mt-10 text-center bg-pink-50 p-6 rounded-2xl border border-pink-200/70">
-                <p class="text-sm md:text-base font-bold text-stone-800 mb-4">
-                    Tudo foi organizado para que você tenha clareza e facilidade em cada projeto.
-                </p>
-                <a href="https://link.syncpayments.com.br/ZuVCJK" class="animate-cta inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-black text-lg md:text-xl px-8 py-4 rounded-full shadow-lg transform transition uppercase tracking-wide">
-                    QUERO MEU GUIA E BÔNUS AGORA ➔
-                </a>
-            </div>
-
+        <div class="card">
+          <h3>🧸 Coleção de Amigurumis</h3>
+          <p>Aprenda a confeccionar bichinhos, bonecas e personagens de alta procura e excelente margem de lucro.</p>
         </div>
+      </div>
     </section>
 
-    <!-- Seção de Garantia -->
-    <section class="bg-gradient-to-r from-pink-600 to-pink-700 text-white py-12 px-4 shadow-inner">
-        <div class="max-w-3xl mx-auto flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
-            <div class="w-32 h-32 flex-shrink-0 bg-white/10 border-2 border-white/40 rounded-full flex flex-col items-center justify-center text-center p-2 shadow-lg">
-                <span class="text-[10px] uppercase font-bold tracking-widest text-pink-200">SATISFAÇÃO</span>
-                <span class="text-3xl font-black">100%</span>
-                <span class="text-[10px] uppercase tracking-wider text-pink-200">GARANTIDA</span>
-            </div>
-            <div class="text-center md:text-left">
-                <h3 class="text-2xl font-black mb-2">7 Dias de Garantia Incondicional</h3>
-                <p class="text-sm text-pink-100 leading-relaxed">
-                    Você tem 7 dias inteiros para acessar o e-book e conferir todas as receitas. Se por algum motivo não ficar satisfeito com o conteúdo, basta enviar um e-mail para receber o reembolso integral sem complicações.
-                </p>
-            </div>
-        </div>
+    <!-- ORGANIZAÇÃO DOS BÔNUS (VALOR AGREGADO) -->
+    <section class="bonus-section">
+      <h2>Bônus Exclusivos Inclusos no Pacote:</h2>
+      <ul class="bonus-list">
+        <li><strong>Bônus 1:</strong> Mega Biblioteca com 1.500 Receitas Auxiliares (Categorizadas por nível de dificuldade).</li>
+        <li><strong>Bônus 2:</strong> Guia de Abreviações e Símbolos do Crochê em Português.</li>
+        <li><strong>Bônus 3:</strong> Guia Rápido de Vendas para Redes Sociais.</li>
+      </ul>
     </section>
 
-    <!-- Oferta e Preço -->
-    <section class="py-12 px-4 text-center max-w-xl mx-auto">
-        <div class="border-2 border-pink-200 bg-white p-8 rounded-3xl shadow-2xl relative overflow-hidden">
-            <div class="bg-pink-500 text-white text-[10px] font-black uppercase tracking-widest py-1 px-8 rounded-full inline-block mb-4 shadow">
-                OFERTA EXCLUSIVA
-            </div>
-            
-            <p class="text-xs font-bold text-stone-400 uppercase">De <span class="line-through text-red-400">R$ 47,90</span> por apenas</p>
-            <p class="text-4xl md:text-5xl font-black text-emerald-600 my-2">R$ 14,90</p>
-            <p class="text-xs font-bold text-stone-500 uppercase mb-6">Pagamento único • Sem mensalidades</p>
-            
-            <!-- Cronômetro em tempo real -->
-            <div class="bg-pink-50/80 p-4 rounded-2xl border border-pink-100 mb-6">
-                <p class="text-xs font-extrabold text-pink-custom uppercase mb-2">⏰ Este preço promocional expira em:</p>
-                <div class="flex justify-center space-x-3">
-                    <div class="bg-white px-3 py-2 rounded-xl border border-pink-200/80 shadow-sm w-16">
-                        <span id="timer-hours" class="text-xl font-black text-stone-800">00</span>
-                        <span class="block text-[9px] text-stone-400 uppercase font-bold">Horas</span>
-                    </div>
-                    <div class="bg-white px-3 py-2 rounded-xl border border-pink-200/80 shadow-sm w-16">
-                        <span id="timer-minutes" class="text-xl font-black text-stone-800">14</span>
-                        <span class="block text-[9px] text-stone-400 uppercase font-bold">Minutos</span>
-                    </div>
-                    <div class="bg-white px-3 py-2 rounded-xl border border-pink-200/80 shadow-sm w-16">
-                        <span id="timer-seconds" class="text-xl font-black text-pink-custom">59</span>
-                        <span class="block text-[9px] text-stone-400 uppercase font-bold">Segundos</span>
-                    </div>
-                </div>
-            </div>
+    <!-- ANCORAGEM DE PREÇO E TRANSPARÊNCIA -->
+    <section class="pricing-table-section">
+      <h2>Resumo do seu pedido:</h2>
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Valor Normal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Guia Principal: 30 Receitas + Precificação</td>
+            <td>R$ 47,00</td>
+          </tr>
+          <tr>
+            <td>Mega Biblioteca de Amigurumis (1.500 receitas)</td>
+            <td>R$ 37,00</td>
+          </tr>
+          <tr>
+            <td>Tabela de Precificação e Guia de Vendas</td>
+            <td>R$ 29,00</td>
+          </tr>
+          <tr class="total-row">
+            <td><strong>PREÇO HOJE:</strong></td>
+            <td><strong class="highlight-price">APENAS R$ 14,90</strong></td>
+          </tr>
+        </tbody>
+      </table>
 
-            <!-- Botão 3 Final -->
-            <a href="https://link.syncpayments.com.br/ZuVCJK" class="animate-cta block w-full bg-emerald-500 hover:bg-emerald-600 text-white font-black text-xl py-5 rounded-full shadow-xl shadow-emerald-500/20 transform transition uppercase tracking-wide">
-                QUERO ME INSCREVER AGORA! ➔
-            </a>
-        </div>
+      <div class="cta-block" style="margin-top: 25px;">
+        <a href="https://link.syncpayments.com.br/ZuVCJK" class="btn-primary">
+          SIM! QUERO APROVEITAR POR R$ 14,90
+        </a>
+        <p class="security-info">Garantia incondicional de 7 dias • Acesso imediato</p>
+      </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="py-12 px-4 max-w-4xl mx-auto border-t border-stone-200/80">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-center text-stone-900 mb-10">
-            Perguntas Frequentes Respondidas
-        </h2>
+  </main>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-            <div class="bg-white p-5 rounded-2xl border border-stone-200/60 shadow-sm">
-                <h4 class="font-bold text-stone-900 mb-2 text-base">O que vou receber ao comprar?</h4>
-                <p class="text-xs md:text-sm text-stone-600 leading-relaxed">Você receberá o e-book principal em PDF com 30 receitas lucrativas + o Super Bônus com mais de 1.500 receitas temáticas de amigurumi e guias de vendas.</p>
-            </div>
-            <div class="bg-white p-5 rounded-2xl border border-stone-200/60 shadow-sm">
-                <h4 class="font-bold text-stone-900 mb-2 text-base">Como acesso o e-book?</h4>
-                <p class="text-xs md:text-sm text-stone-600 leading-relaxed">Após a confirmação do pagamento, você recebe as instruções de acesso ao e-book em PDF e aos bônus no seu e-mail.</p>
-            </div>
-            <div class="bg-white p-5 rounded-2xl border border-stone-200/60 shadow-sm">
-                <h4 class="font-bold text-stone-900 mb-2 text-base">Serve para quem é iniciante?</h4>
-                <p class="text-xs md:text-sm text-stone-600 leading-relaxed">Sim! O guia traz tabela de abreviações e receitas separadas por nível, além dos vídeos complementares que ajudam no aprendizado.</p>
-            </div>
-            <div class="bg-white p-5 rounded-2xl border border-stone-200/60 shadow-sm">
-                <h4 class="font-bold text-stone-900 mb-2 text-base">O pagamento é seguro?</h4>
-                <p class="text-xs md:text-sm text-stone-600 leading-relaxed">Totalmente seguro, processado com criptografia em plataforma de checkout certificada.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer class="bg-stone-900 text-stone-400 text-center py-8 text-xs space-y-3">
-        <p>© Crochê que Vende. Todos os direitos reservados.</p>
-        <p><a href="#" class="hover:underline text-stone-300">Política de Privacidade</a> | <a href="#" class="hover:underline text-stone-300">Termos de Uso</a></p>
-    </footer>
-
-    <!-- Script Cronômetro Ativo -->
-    <script>
-        (function startTimer() {
-            var duration = 14 * 60 + 59;
-            var timer = duration, minutes, seconds;
-            
-            var displayMinutes = document.getElementById('timer-minutes');
-            var displaySeconds = document.getElementById('timer-seconds');
-            
-            setInterval(function () {
-                minutes = parseInt(timer / 60, 10);
-                seconds = parseInt(timer % 60, 10);
-
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
-
-                if (displayMinutes && displaySeconds) {
-                    displayMinutes.textContent = minutes;
-                    displaySeconds.textContent = seconds;
-                }
-
-                if (--timer < 0) {
-                    timer = duration;
-                }
-            }, 1000);
-        })();
-    </script>
+  <footer>
+    <p>© 2026 Guia Crochê Profissional. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
