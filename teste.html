@@ -404,33 +404,43 @@
       white-space: nowrap;
     }
 
+    /* ESTILO DOS CARDS DE BÔNUS SEM IMAGEM */
     .bonus-card-item {
       background: #fff8e1;
       border: 1px solid var(--accent-amber);
       border-radius: 8px;
-      padding: 10px;
+      padding: 12px;
       margin-top: 10px;
       display: flex;
-      gap: 10px;
+      justify-content: space-between;
       align-items: center;
     }
 
-    .bonus-card-item img {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      border-radius: 6px;
+    .bonus-info-text {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .bonus-icon {
+      font-size: 1.3rem;
     }
 
     .bonus-card-item h5 {
-      font-size: 0.82rem;
+      font-size: 0.85rem;
       color: #333;
+      font-weight: 700;
+      line-height: 1.2;
     }
 
-    .bonus-card-item span {
+    .bonus-badge-free {
       font-size: 0.75rem;
       color: #2e7d32;
-      font-weight: 700;
+      font-weight: 800;
+      background: #e8f5e9;
+      padding: 3px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
     }
 
     .plan-card-basic {
@@ -778,27 +788,35 @@
           <strong style="font-size: 0.85rem; color: #1a1a1a; display: block; margin-top: 15px;">Bônus inclusos nesta oferta:</strong>
           
           <div class="bonus-card-item">
-            <img src="bonus1.jpg" alt="Bônus 1">
-            <div>
-              <h5>Biblioteca Auxiliar (+1.500 Receitas)</h5>
-              <span>GRÁTIS</span>
+            <div class="bonus-info-text">
+              <span class="bonus-icon">🎁</span>
+              <h5>Bônus Especial ( +1500 receitas )</h5>
             </div>
+            <span class="bonus-badge-free">GRÁTIS</span>
           </div>
 
           <div class="bonus-card-item">
-            <img src="bonus2.jpg" alt="Bônus 2">
-            <div>
+            <div class="bonus-info-text">
+              <span class="bonus-icon">📊</span>
               <h5>Ficha & Tabela de Precificação</h5>
-              <span>GRÁTIS</span>
             </div>
+            <span class="bonus-badge-free">GRÁTIS</span>
           </div>
 
           <div class="bonus-card-item">
-            <img src="bonus3.jpg" alt="Bônus 3">
-            <div>
-              <h5>Guia Rápido de Divulgação e Vendas</h5>
-              <span>GRÁTIS</span>
+            <div class="bonus-info-text">
+              <span class="bonus-icon">🧶</span>
+              <h5>Guia de Materiais & Escolha de Fios Ideal</h5>
             </div>
+            <span class="bonus-badge-free">GRÁTIS</span>
+          </div>
+
+          <div class="bonus-card-item">
+            <div class="bonus-info-text">
+              <span class="bonus-icon">💡</span>
+              <h5>Manual Prático de Acabamento Perfeito & Costura Invisible</h5>
+            </div>
+            <span class="bonus-badge-free">GRÁTIS</span>
           </div>
 
           <div style="margin-top: 20px;">
@@ -819,9 +837,10 @@
           <ul class="hero-bullets" style="font-size: 0.85rem; margin-bottom: 25px;">
             <li>✅ Guia Principal com 30 Receitas</li>
             <li>✅ Formato em PDF</li>
-            <li style="color: #aaa; text-decoration: line-through;">✖ Sem Biblioteca de 1.500 receitas</li>
+            <li style="color: #aaa; text-decoration: line-through;">✖ Sem Bônus Especial (+1500 receitas)</li>
             <li style="color: #aaa; text-decoration: line-through;">✖ Sem Tabela de Precificação</li>
-            <li style="color: #aaa; text-decoration: line-through;">✖ Sem Guia de Divulgação</li>
+            <li style="color: #aaa; text-decoration: line-through;">✖ Sem Guia de Materiais & Fios</li>
+            <li style="color: #aaa; text-decoration: line-through;">✖ Sem Manual de Acabamento Perfeito</li>
           </ul>
 
           <button onclick="openUpsellModal()" class="btn-outline">
