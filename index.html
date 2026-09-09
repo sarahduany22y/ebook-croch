@@ -6,7 +6,7 @@
   <title>Crochê que Vende — Guia & Receitas Passo a Passo</title>
   
   <!-- ========================================== -->
-  <!-- META PIXEL CODE (RASTREAMENTO DE PAGEVIEW) -->
+  <!-- META PIXEL CODE (RASTREAMENTO)             -->
   <!-- ========================================== -->
   <script>
     !function(f,b,e,v,n,t,s)
@@ -20,6 +20,16 @@
     
     fbq('init', '1332161722010445');
     fbq('track', 'PageView');
+
+    // Função para disparar o InitiateCheckout quando clicar nos botões
+    function trackCheckout(url) {
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout');
+      }
+      setTimeout(function() {
+        window.location.href = url;
+      }, 150);
+    }
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
@@ -153,10 +163,10 @@
       font-weight: 500;
     }
 
-    /* --- AJUSTES DE CENTRALIZAÇÃO PARA COMPUTADORES --- */
+    /* --- CENTRALIZAÇÃO COMPUTADOR --- */
     @media (min-width: 850px) {
       .hero-content {
-        max-width: 780px; /* Alinha o conteúdo centralizado sem espalhar excessivamente */
+        max-width: 780px;
         text-align: center;
       }
 
@@ -166,7 +176,7 @@
 
       .hero-bullets {
         display: inline-block;
-        text-align: left; /* Mantém os itens do checklist alinhados à esquerda entre si, porém centralizados na tela */
+        text-align: left;
       }
     }
 
@@ -545,7 +555,7 @@
       color: #1a1a1a;
     }
 
-    /* 10. BLOCO DE GARANTIA */
+    /* 10. GARANTIA */
     .guarantee-box {
       background: #fff;
       border: 2px dashed var(--accent-amber);
@@ -588,7 +598,7 @@
       color: var(--text-muted);
     }
 
-    /* POPUP UPSELL MODAL */
+    /* MODAL UPSELL */
     .modal-overlay {
       display: none;
       position: fixed;
@@ -683,7 +693,7 @@
     </div>
   </div>
 
-  <!-- 5. SEÇÃO VEJA O QUE VOCÊ VAI CRIAR -->
+  <!-- 5. GALERIA -->
   <section class="section-padding bg-white">
     <div class="container">
       <div class="section-header">
@@ -720,7 +730,7 @@
     </div>
   </section>
 
-  <!-- 6. SEÇÃO VEJA POR DENTRO DO GUIA -->
+  <!-- 6. VEJA POR DENTRO -->
   <section class="section-padding bg-pink">
     <div class="container">
       <div class="section-header">
@@ -752,7 +762,7 @@
     </div>
   </section>
 
-  <!-- 7. SEÇÃO DE TRANSFORMAÇÃO -->
+  <!-- 7. TRANSFORMAÇÃO -->
   <section class="section-padding bg-white">
     <div class="container">
       <div class="section-header">
@@ -840,7 +850,7 @@
           </div>
 
           <div style="margin-top: 20px;">
-            <a href="https://link.syncpayments.com.br/mNsr1x" class="btn-cta">
+            <a href="javascript:void(0);" onclick="trackCheckout('https://link.syncpayments.com.br/mNsr1x')" class="btn-cta">
               QUERO A BIBLIOTECA COMPLETA ➔
             </a>
             <p class="cta-microtext">⚡ Liberação imediata no e-mail</p>
@@ -872,7 +882,7 @@
     </div>
   </section>
 
-  <!-- 9. PROVA SOCIAL -->
+  <!-- 9. DEPOIMENTOS -->
   <section class="section-padding bg-white">
     <div class="container">
       <div class="section-header">
@@ -905,7 +915,7 @@
     </div>
   </section>
 
-  <!-- 10. GARANTIA VISUAL -->
+  <!-- 10. GARANTIA -->
   <section class="section-padding bg-pink">
     <div class="container">
       <div class="guarantee-box">
@@ -921,7 +931,7 @@
     </div>
   </section>
 
-  <!-- 11. FAQ COMPLETO -->
+  <!-- 11. FAQ -->
   <section class="section-padding bg-white">
     <div class="container">
       <div class="section-header">
@@ -959,7 +969,7 @@
       <p class="section-subtitle" style="margin-bottom: 25px;">Adquira a Biblioteca Completa com receitas, bônus e tabela por apenas R$ 24,90 no Pix.</p>
       
       <div style="max-width: 500px; margin: 0 auto;">
-        <a href="https://link.syncpayments.com.br/mNsr1x" class="btn-cta">
+        <a href="javascript:void(0);" onclick="trackCheckout('https://link.syncpayments.com.br/mNsr1x')" class="btn-cta">
           SIM! QUERO APROVEITAR A OFERTA ➔
         </a>
         <p class="cta-microtext" style="color: #aaa; margin-top: 10px;">🛡️ Compra segura • 7 dias de garantia • Receba no e-mail</p>
@@ -981,7 +991,7 @@
         Por R$ 19,90 no Pix
       </div>
 
-      <a href="https://link.syncpayments.com.br/M75LSn" class="btn-cta" style="font-size: 0.95rem; padding: 12px;">
+      <a href="javascript:void(0);" onclick="trackCheckout('https://link.syncpayments.com.br/M75LSn')" class="btn-cta" style="font-size: 0.95rem; padding: 12px;">
         ACEITAR PLANO COMPLETO POR R$ 19,90 ➔
       </a>
 
@@ -1004,7 +1014,7 @@
     }
 
     function goToBasicCheckout() {
-      window.location.href = "https://link.syncpayments.com.br/ZuVCJK";
+      trackCheckout('https://link.syncpayments.com.br/ZuVCJK');
     }
   </script>
 
