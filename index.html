@@ -88,25 +88,18 @@
     /* 2. HERO SECTION */
     .hero-section {
       background: linear-gradient(180deg, #fff 0%, var(--brand-light) 100%);
-      padding: 40px 0 50px 0;
+      padding: 30px 0 40px 0;
       border-bottom: 1px solid var(--border-color);
     }
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 30px;
-      align-items: center;
-    }
-
-    @media (min-width: 850px) {
-      .hero-grid {
-        grid-template-columns: 1.1fr 0.9fr;
-      }
+    .hero-container {
+      display: flex;
+      flex-direction: column;
     }
 
     .hero-tag {
       display: inline-block;
+      align-self: flex-start;
       background-color: #ffffff;
       color: var(--brand-primary);
       font-size: 0.8rem;
@@ -123,31 +116,7 @@
       color: #111111;
       line-height: 1.25;
       font-weight: 800;
-      margin-bottom: 15px;
-    }
-
-    @media (min-width: 850px) {
-      .hero-title { font-size: 2.3rem; }
-    }
-
-    .hero-subtitle {
-      font-size: 0.98rem;
-      color: #4a4a4a;
-      margin-bottom: 22px;
-    }
-
-    .hero-bullets {
-      list-style: none;
-      margin-bottom: 25px;
-    }
-
-    .hero-bullets li {
-      font-size: 0.92rem;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 500;
+      margin-bottom: 20px;
     }
 
     .hero-media-box {
@@ -156,12 +125,51 @@
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
       text-align: center;
+      margin-bottom: 25px;
     }
 
     .hero-media-box img {
       border-radius: 10px;
       width: 100%;
       height: auto;
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      color: #4a4a4a;
+      margin-bottom: 20px;
+    }
+
+    .hero-bullets {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+
+    .hero-bullets li {
+      font-size: 0.92rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+    }
+
+    /* Ajuste para Computadores / Telas Grandes */
+    @media (min-width: 850px) {
+      .hero-title { font-size: 2.3rem; }
+      .hero-container {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 30px;
+        align-items: center;
+      }
+      .hero-left-col {
+        display: flex;
+        flex-direction: column;
+      }
+      .hero-media-box {
+        margin-bottom: 0;
+      }
     }
 
     /* 3. BOTOES & CTA */
@@ -427,7 +435,6 @@
       white-space: nowrap;
     }
 
-    /* ESTILO DOS CARDS DE BÔNUS SEM IMAGEM */
     .bonus-card-item {
       background: #fff8e1;
       border: 1px solid var(--accent-amber);
@@ -633,12 +640,20 @@
   <!-- 2. HERO SECTION -->
   <section class="hero-section">
     <div class="container">
-      <div class="hero-grid">
+      <div class="hero-container">
         
-        <!-- Coluna Esquerda: Headline & Benefícios -->
+        <!-- 1. TAG E TITULO PRINCIPAL -->
+        <span class="hero-tag">Guia Prático em PDF</span>
+        <h1 class="hero-title">Crie peças lindas de crochê e aprenda a calcular o preço certo para vender suas encomendas</h1>
+
+        <!-- 2. IMAGEM DO MOCKUP -->
+        <div class="hero-media-box">
+          <img src="hero_mockup_croche_que_vende.jpg" alt="Guia Crochê que Vende - Kit Completo">
+          <p class="cta-microtext" style="margin-top:8px;">📦 Acesso Imediato no seu E-mail</p>
+        </div>
+
+        <!-- 3. SUBTÍTULO E BULLETS ABAIXO DA IMAGEM -->
         <div>
-          <span class="hero-tag">Guia Prático em PDF</span>
-          <h1 class="hero-title">Crie peças lindas de crochê e aprenda a calcular o preço certo para vender suas encomendas</h1>
           <p class="hero-subtitle">
             Receba um guia digital em português com 30 receitas passo a passo, materiais, contagem exata de pontos, precificação e bônus para começar mesmo que você ainda esteja aprendendo.
           </p>
@@ -649,12 +664,6 @@
             <li>✅ Ficha e tabela prática para precificar seu trabalho</li>
             <li>✅ Formato em PDF: baixe no celular ou imprima</li>
           </ul>
-        </div>
-
-        <!-- Coluna Direita: Imagem do Mockup do Produto -->
-        <div class="hero-media-box">
-          <img src="hero_mockup_croche_que_vende.jpg" alt="Guia Crochê que Vende - Kit Completo">
-          <p class="cta-microtext" style="margin-top:8px;">📦 Acesso Imediato no seu E-mail</p>
         </div>
 
       </div>
