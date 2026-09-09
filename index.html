@@ -21,14 +21,9 @@
     fbq('init', '1332161722010445');
     fbq('track', 'PageView');
 
-    // Função para disparar o InitiateCheckout quando clicar nos botões
+    // Redirecionamento limpo sem duplicar InitiateCheckout na página de vendas
     function trackCheckout(url) {
-      if (typeof fbq === 'function') {
-        fbq('track', 'InitiateCheckout');
-      }
-      setTimeout(function() {
-        window.location.href = url;
-      }, 150);
+      window.location.href = url;
     }
   </script>
   <noscript>
