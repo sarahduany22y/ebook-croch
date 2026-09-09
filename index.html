@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crochê que Vende — Guia & Receitas Passo a Passo</title>
   
+  <!-- ========================================== -->
+  <!-- META PIXEL CODE (RASTREAMENTO DE PAGEVIEW) -->
+  <!-- ========================================== -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // SUBSTITUA 'SEU_PIXEL_ID_AQUI' PELO NUMERO DO SEU PIXEL
+    fbq('init', '1332161722010445');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1332161722010445&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- ========================================== -->
+
   <!-- Fontes do Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +62,7 @@
       line-height: 1.6;
     }
 
-    img, video {
+    img {
       max-width: 100%;
       height: auto;
       display: block;
@@ -135,10 +158,10 @@
       text-align: center;
     }
 
-    .video-block {
-      background-color: #000;
+    .hero-media-box img {
       border-radius: 10px;
-      overflow: hidden;
+      width: 100%;
+      height: auto;
     }
 
     /* 3. BOTOES & CTA */
@@ -628,15 +651,10 @@
           </ul>
         </div>
 
-        <!-- Coluna Direita: VSL Vídeo -->
+        <!-- Coluna Direita: Imagem do Mockup do Produto -->
         <div class="hero-media-box">
-          <div class="video-block">
-            <video id="promoVideo" controls preload="metadata" muted>
-              <source src="video.mp4" type="video/mp4">
-              Seu navegador não suporta a exibição de vídeos.
-            </video>
-          </div>
-          <p class="cta-microtext" style="margin-top:8px;">🎥 Assista ao vídeo de demonstração interna</p>
+          <img src="hero_mockup_croche_que_vende.jpg" alt="Guia Crochê que Vende - Kit Completo">
+          <p class="cta-microtext" style="margin-top:8px;">📦 Acesso Imediato no seu E-mail</p>
         </div>
 
       </div>
