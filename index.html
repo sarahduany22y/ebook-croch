@@ -18,7 +18,6 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     
-    // SUBSTITUA 'SEU_PIXEL_ID_AQUI' PELO NUMERO DO SEU PIXEL
     fbq('init', '1332161722010445');
     fbq('track', 'PageView');
   </script>
@@ -42,12 +41,12 @@
     }
 
     :root {
-      --brand-primary: #d81b60; /* Rosa/Magenta da marca */
+      --brand-primary: #d81b60;
       --brand-dark: #880e4f;
       --brand-light: #fce4ec;
-      --accent-green: #25d366; /* Verde exclusivo para CTA */
+      --accent-green: #25d366;
       --accent-green-hover: #1eaa52;
-      --accent-amber: #ffb300; /* Âmbar para bônus/garantia */
+      --accent-amber: #ffb300;
       --text-main: #2b2b2b;
       --text-muted: #666666;
       --bg-light: #f8f9fa;
@@ -92,6 +91,11 @@
       border-bottom: 1px solid var(--border-color);
     }
 
+    .hero-content {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
     .hero-tag {
       display: inline-block;
       background-color: #ffffff;
@@ -119,7 +123,8 @@
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
       text-align: center;
-      margin-bottom: 25px;
+      margin: 0 auto 25px auto;
+      max-width: 450px;
     }
 
     .hero-media-box img {
@@ -148,29 +153,20 @@
       font-weight: 500;
     }
 
-    /* --- LAYOUT PARA COMPUTADORES / TELAS GRANDES --- */
+    /* --- AJUSTES DE CENTRALIZAÇÃO PARA COMPUTADORES --- */
     @media (min-width: 850px) {
-      .hero-grid-pc {
-        display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
-        gap: 40px;
-        align-items: center;
+      .hero-content {
+        max-width: 780px; /* Alinha o conteúdo centralizado sem espalhar excessivamente */
+        text-align: center;
       }
 
       .hero-title {
         font-size: 2.3rem;
       }
 
-      .hero-media-box {
-        margin-bottom: 0;
-      }
-
-      .hero-order-2-pc {
-        order: 2; /* No PC a imagem vai para a coluna da direita */
-      }
-      
-      .hero-order-1-pc {
-        order: 1; /* No PC o conteúdo de texto fica na coluna da esquerda */
+      .hero-bullets {
+        display: inline-block;
+        text-align: left; /* Mantém os itens do checklist alinhados à esquerda entre si, porém centralizados na tela */
       }
     }
 
@@ -642,30 +638,26 @@
   <!-- 2. HERO SECTION -->
   <section class="hero-section">
     <div class="container">
-      <div class="hero-grid-pc">
+      <div class="hero-content">
         
-        <!-- BLOTO DE TEXTO -->
-        <div class="hero-order-1-pc">
-          <span class="hero-tag">Guia Prático em PDF</span>
-          <h1 class="hero-title">Crie peças lindas de crochê e aprenda a calcular o preço certo para vender suas encomendas</h1>
+        <span class="hero-tag">Guia Prático em PDF</span>
+        <h1 class="hero-title">Crie peças lindas de crochê e aprenda a calcular o preço certo para vender suas encomendas</h1>
 
-          <!-- No Celular a Imagem Fica Aqui (Abaixo do Título). No PC a imagem vai para o lado direito via CSS -->
-          <div class="hero-media-box hero-order-2-pc">
-            <img src="hero_mockup_croche_que_vende.jpg" alt="Guia Crochê que Vende - Kit Completo">
-            <p class="cta-microtext" style="margin-top:8px;">📦 Acesso Imediato no seu E-mail</p>
-          </div>
-
-          <p class="hero-subtitle">
-            Receba um guia digital em português com 30 receitas passo a passo, materiais, contagem exata de pontos, precificação e bônus para começar mesmo que você ainda esteja aprendendo.
-          </p>
-
-          <ul class="hero-bullets">
-            <li>✅ Receitas detalhadas 100% em português</li>
-            <li>✅ Contagem exata de pontos para não errar</li>
-            <li>✅ Ficha e tabela prática para precificar seu trabalho</li>
-            <li>✅ Formato em PDF: baixe no celular ou imprima</li>
-          </ul>
+        <div class="hero-media-box">
+          <img src="hero_mockup_croche_que_vende.jpg" alt="Guia Crochê que Vende - Kit Completo">
+          <p class="cta-microtext" style="margin-top:8px;">📦 Acesso Imediato no seu E-mail</p>
         </div>
+
+        <p class="hero-subtitle">
+          Receba um guia digital em português com 30 receitas passo a passo, materiais, contagem exata de pontos, precificação e bônus para começar mesmo que você ainda esteja aprendendo.
+        </p>
+
+        <ul class="hero-bullets">
+          <li>✅ Receitas detalhadas 100% em português</li>
+          <li>✅ Contagem exata de pontos para não errar</li>
+          <li>✅ Ficha e tabela prática para precificar seu trabalho</li>
+          <li>✅ Formato em PDF: baixe no celular ou imprima</li>
+        </ul>
 
       </div>
     </div>
