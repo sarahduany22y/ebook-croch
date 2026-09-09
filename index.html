@@ -92,14 +92,8 @@
       border-bottom: 1px solid var(--border-color);
     }
 
-    .hero-container {
-      display: flex;
-      flex-direction: column;
-    }
-
     .hero-tag {
       display: inline-block;
-      align-self: flex-start;
       background-color: #ffffff;
       color: var(--brand-primary);
       font-size: 0.8rem;
@@ -154,21 +148,29 @@
       font-weight: 500;
     }
 
-    /* Ajuste para Computadores / Telas Grandes */
+    /* --- LAYOUT PARA COMPUTADORES / TELAS GRANDES --- */
     @media (min-width: 850px) {
-      .hero-title { font-size: 2.3rem; }
-      .hero-container {
+      .hero-grid-pc {
         display: grid;
         grid-template-columns: 1.1fr 0.9fr;
-        gap: 30px;
+        gap: 40px;
         align-items: center;
       }
-      .hero-left-col {
-        display: flex;
-        flex-direction: column;
+
+      .hero-title {
+        font-size: 2.3rem;
       }
+
       .hero-media-box {
         margin-bottom: 0;
+      }
+
+      .hero-order-2-pc {
+        order: 2; /* No PC a imagem vai para a coluna da direita */
+      }
+      
+      .hero-order-1-pc {
+        order: 1; /* No PC o conteúdo de texto fica na coluna da esquerda */
       }
     }
 
@@ -640,20 +642,19 @@
   <!-- 2. HERO SECTION -->
   <section class="hero-section">
     <div class="container">
-      <div class="hero-container">
+      <div class="hero-grid-pc">
         
-        <!-- 1. TAG E TITULO PRINCIPAL -->
-        <span class="hero-tag">Guia Prático em PDF</span>
-        <h1 class="hero-title">Crie peças lindas de crochê e aprenda a calcular o preço certo para vender suas encomendas</h1>
+        <!-- BLOTO DE TEXTO -->
+        <div class="hero-order-1-pc">
+          <span class="hero-tag">Guia Prático em PDF</span>
+          <h1 class="hero-title">Crie peças lindas de crochê e aprenda a calcular o preço certo para vender suas encomendas</h1>
 
-        <!-- 2. IMAGEM DO MOCKUP -->
-        <div class="hero-media-box">
-          <img src="hero_mockup_croche_que_vende.jpg" alt="Guia Crochê que Vende - Kit Completo">
-          <p class="cta-microtext" style="margin-top:8px;">📦 Acesso Imediato no seu E-mail</p>
-        </div>
+          <!-- No Celular a Imagem Fica Aqui (Abaixo do Título). No PC a imagem vai para o lado direito via CSS -->
+          <div class="hero-media-box hero-order-2-pc">
+            <img src="hero_mockup_croche_que_vende.jpg" alt="Guia Crochê que Vende - Kit Completo">
+            <p class="cta-microtext" style="margin-top:8px;">📦 Acesso Imediato no seu E-mail</p>
+          </div>
 
-        <!-- 3. SUBTÍTULO E BULLETS ABAIXO DA IMAGEM -->
-        <div>
           <p class="hero-subtitle">
             Receba um guia digital em português com 30 receitas passo a passo, materiais, contagem exata de pontos, precificação e bônus para começar mesmo que você ainda esteja aprendendo.
           </p>
